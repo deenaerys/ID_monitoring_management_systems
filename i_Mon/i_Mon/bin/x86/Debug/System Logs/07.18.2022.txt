@@ -1,0 +1,4 @@
+10:44 am =====> [Microsoft][ODBC Driver Manager] Data source name not found and no default driver specified
+10:44 am =====> [Microsoft][ODBC Driver Manager] Data source name not found and no default driver specified
+10:44 am =====> [Microsoft][ODBC Driver Manager] Data source name not found and no default driver specified
+10:45 am =====> [MySQL][ODBC 5.1 Driver]Client does not support authentication protocol requested by server; consider upgrading MySQL client

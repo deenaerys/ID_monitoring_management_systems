@@ -1,0 +1,2 @@
+6:29 PM =====> [MySQL][ODBC 5.1 Driver]Access denied for user 'root'@'localhost' (using password: YES)
+6:29 PM =====> [MySQL][ODBC 5.1 Driver]Access denied for user 'root'@'localhost' (using password: YES)

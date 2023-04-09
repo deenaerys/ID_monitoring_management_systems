@@ -1,0 +1,2 @@
+9:26 am =====> [MySQL][ODBC 5.1 Driver]Client does not support authentication protocol requested by server; consider upgrading MySQL client
+9:26 am =====> [MySQL][ODBC 5.1 Driver]Client does not support authentication protocol requested by server; consider upgrading MySQL client

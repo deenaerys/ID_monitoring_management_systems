@@ -1,0 +1,103 @@
+[SERVER CONFIG]
+IPADDRESS=10.11.12.50
+DBNAME=idb
+PORT=3306
+USERNAME=isa
+PASSWORD=1sa]Inc]APPisa.db
+DRIVER={MySQL ODBC 8.0 Unicode Driver}
+[LOCAL CONFIG]
+IPADDRESS=127.0.0.1
+DBNAME=idb
+PORT=3306
+USERNAME=root
+PASSWORD=1saIT2k18
+DRIVER={mySQL ODBC 5.1 Driver}
+[LOGO]
+X=267
+Y=23
+V=1
+W=200
+H=200
+L=C:\Dev\i_Mon\i_Mon\bin\x86\Debug\Logo\psg-watermark.png
+S=4
+TR=1
+[HEADER1]
+X=549
+Y=50
+FONT=[Font: Name=Bookman Old Style, Size=36, Units=3, GdiCharSet=0, GdiVerticalFont=False]
+FA=255
+FR=247
+FG=199
+FB=9
+TEXT=ARMED FORCES OF THE PHILIPPINES
+V=1
+TR=1
+[HEADER2]
+Y=113
+X=819
+FONT=[Font: Name=Bookman Old Style, Size=26.25, Units=3, GdiCharSet=0, GdiVerticalFont=False]
+FA=255
+FR=247
+FG=199
+FB=9
+TEXT=Intellligence Service
+V=1
+TR=1
+[DATETIME]
+BA=255
+BR=0
+BG=255
+BB=255
+FONT=[Font: Name=Courier New, Size=24, Units=3, GdiCharSet=0, GdiVerticalFont=False]
+FA=255
+FR=250
+FG=219
+FB=5
+FORMAT=dddd  MMMM dd, yyyy hh:mm:ss tt
+X=685
+Y=180
+V=1
+TR=1
+[BANNER]
+H=250
+BA=255
+BR=0
+BG=0
+BB=0
+U=0
+[ID]
+W=610
+H=610
+P=420
+F=C:\PICS
+M=220
+CC=1
+[ACC]
+FA=255
+FR=0
+FG=0
+FB=0
+FONT=[Font: Name=Courier New, Size=20.25, Units=3, GdiCharSet=0, GdiVerticalFont=False]
+H=50
+[LANE]
+FA=255
+FR=238
+FG=233
+FB=17
+BA=255
+BR=55
+BG=55
+BB=55
+FONT=[Font: Name=Courier New, Size=26.25, Units=3, GdiCharSet=0, GdiVerticalFont=False]
+H=50
+[NAME]
+FA=255
+FR=0
+FG=0
+FB=0
+BA=255
+BR=255
+BG=255
+BB=255
+FONT=[Font: Name=Courier New, Size=21.75, Units=3, GdiCharSet=0, GdiVerticalFont=False]
+H=50
