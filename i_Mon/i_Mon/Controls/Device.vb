@@ -60,6 +60,9 @@ Public Class Device
             .pic.Invalidate()
             .txtCardcode.ForeColor = .txtlane.ForeColor
             .txtCardcode.BackColor = .txtlane.BackColor
+            autoclear = i.auto_clear
+            autoclear_delay = i.auto_clear_delay * 1000
+            .tmr.Interval = autoclear_delay
 
         End With
 
@@ -247,7 +250,7 @@ here:   Me.tmr.Enabled = False 'True
     End Function
 
     Private Sub tmr_Tick(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles tmr.Tick
-
+        If autoclear = False Then Exit Sub
 
         Me.txtAccess.Text = ""
         Me.txtName.Text = ""

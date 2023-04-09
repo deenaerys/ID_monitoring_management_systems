@@ -267,7 +267,8 @@ Module Structure_Functions
 
 #Region "ID Config"
     Public idfolder As String
-
+    Public autoclear As Boolean
+    Public autoclear_delay As Integer
     Public Structure ID_Config
         Public id_width As Integer
         Public id_height As Integer
@@ -275,6 +276,8 @@ Module Structure_Functions
         Public id_pad As Integer
         Public id_folder As String
         Public show_cardcode As Boolean
+        Public auto_clear As Boolean
+        Public auto_clear_delay As Integer
     End Structure
 
     Public Function Get_ID_Config() As ID_Config
@@ -285,6 +288,8 @@ Module Structure_Functions
         x.id_pad = INI.GetInteger("ID", "M", 100)
         x.id_folder = INI.GetString("ID", "F", Application.StartupPath & "\PICS")
         x.show_cardcode = INI.GetBoolean("ID", "CC", True)
+        x.auto_clear = INI.GetBoolean("ID", "AC", False)
+        x.auto_clear_delay = INI.GetInteger("ID", "AD", 3)
         Return x
     End Function
 #End Region

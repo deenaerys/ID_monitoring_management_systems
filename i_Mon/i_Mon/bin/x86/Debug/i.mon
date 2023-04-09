@@ -72,6 +72,8 @@ P=420
 F=C:\PICS
 M=220
 CC=1
+AC=0
+AD=3
 [ACC]
 FA=255
 FR=0

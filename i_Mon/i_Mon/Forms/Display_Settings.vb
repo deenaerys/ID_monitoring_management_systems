@@ -16,6 +16,11 @@
         x.WriteInteger("NAME", "H", Me.txtNameH.Value)
         x.WriteInteger("ACC", "H", Me.txtAccH.Value)
         x.WriteBoolean("ID", "CC", CBool(Me.cbShowcardcode.Checked))
+        x.WriteBoolean("ID", "AC", CBool(Me.cbAutoClear.Checked))
+        x.WriteInteger("ID", "AD", Me.txtDelay.Value)
+
+        autoclear = CBool(Me.cbAutoClear.Checked)
+        autoclear_delay = Me.txtDelay.Value * 1000
 
     End Sub
 
@@ -28,6 +33,8 @@
         Me.txtFolder.Text = x.id_folder
         Me.txtPad.Value = x.id_pad
         Me.cbShowcardcode.Checked = CBool(x.show_cardcode)
+        Me.cbAutoClear.Checked = CBool(x.auto_clear)
+        Me.txtDelay.Value = x.auto_clear_delay
 
 
         Dim la As New Lane_Config
@@ -229,4 +236,6 @@
         Me.txtaccF.BackColor = Color.FromArgb(y.acc_FA, y.acc_FR, y.acc_FG, y.acc_FB)
         dlg.Dispose()
     End Sub
+
+   
 End Class

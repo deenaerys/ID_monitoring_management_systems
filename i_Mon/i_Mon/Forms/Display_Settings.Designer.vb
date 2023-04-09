@@ -69,6 +69,9 @@ Partial Class Display_Settings
         Me.Label14 = New System.Windows.Forms.Label
         Me.txtFolder = New System.Windows.Forms.TextBox
         Me.cbShowcardcode = New System.Windows.Forms.CheckBox
+        Me.cbAutoClear = New System.Windows.Forms.CheckBox
+        Me.txtDelay = New System.Windows.Forms.NumericUpDown
+        Me.Label17 = New System.Windows.Forms.Label
         Me.GroupBox1.SuspendLayout()
         CType(Me.txtPad, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.txtPhoto, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -80,6 +83,7 @@ Partial Class Display_Settings
         CType(Me.txtNameH, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox4.SuspendLayout()
         CType(Me.txtAccH, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.txtDelay, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'GroupBox1
@@ -535,12 +539,44 @@ Partial Class Display_Settings
         Me.cbShowcardcode.Text = "Show Cardcode"
         Me.cbShowcardcode.UseVisualStyleBackColor = True
         '
+        'cbAutoClear
+        '
+        Me.cbAutoClear.AutoSize = True
+        Me.cbAutoClear.Location = New System.Drawing.Point(12, 397)
+        Me.cbAutoClear.Name = "cbAutoClear"
+        Me.cbAutoClear.Size = New System.Drawing.Size(127, 21)
+        Me.cbAutoClear.TabIndex = 9
+        Me.cbAutoClear.Text = "Auto-Clear Photo"
+        Me.cbAutoClear.UseVisualStyleBackColor = True
+        '
+        'txtDelay
+        '
+        Me.txtDelay.Location = New System.Drawing.Point(145, 396)
+        Me.txtDelay.Maximum = New Decimal(New Integer() {999999999, 0, 0, 0})
+        Me.txtDelay.Minimum = New Decimal(New Integer() {1, 0, 0, 0})
+        Me.txtDelay.Name = "txtDelay"
+        Me.txtDelay.Size = New System.Drawing.Size(55, 25)
+        Me.txtDelay.TabIndex = 10
+        Me.txtDelay.Value = New Decimal(New Integer() {1, 0, 0, 0})
+        '
+        'Label17
+        '
+        Me.Label17.AutoSize = True
+        Me.Label17.Location = New System.Drawing.Point(203, 399)
+        Me.Label17.Name = "Label17"
+        Me.Label17.Size = New System.Drawing.Size(64, 17)
+        Me.Label17.TabIndex = 11
+        Me.Label17.Text = "second(s)"
+        '
         'Display_Settings
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 17.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
-        Me.ClientSize = New System.Drawing.Size(491, 399)
+        Me.ClientSize = New System.Drawing.Size(491, 430)
+        Me.Controls.Add(Me.Label17)
+        Me.Controls.Add(Me.txtDelay)
+        Me.Controls.Add(Me.cbAutoClear)
         Me.Controls.Add(Me.cbShowcardcode)
         Me.Controls.Add(Me.txtFolder)
         Me.Controls.Add(Me.Label14)
@@ -570,6 +606,7 @@ Partial Class Display_Settings
         Me.GroupBox4.ResumeLayout(False)
         Me.GroupBox4.PerformLayout()
         CType(Me.txtAccH, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.txtDelay, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -621,4 +658,7 @@ Partial Class Display_Settings
     Friend WithEvents txtPad As System.Windows.Forms.NumericUpDown
     Friend WithEvents Label16 As System.Windows.Forms.Label
     Friend WithEvents cbShowcardcode As System.Windows.Forms.CheckBox
+    Friend WithEvents cbAutoClear As System.Windows.Forms.CheckBox
+    Friend WithEvents txtDelay As System.Windows.Forms.NumericUpDown
+    Friend WithEvents Label17 As System.Windows.Forms.Label
 End Class
